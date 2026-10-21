@@ -79,7 +79,7 @@ portrait leaflet; this site is that leaflet, made for the web.
 
 ## Still to confirm with the client
 
-- Logo master file (the current SVG is redrawn from the business card photo)
+- Logo master file (the current mark is an exact crop from the business card photo, not a redraw)
 - Service arrangements: installation, restocking frequency, maintenance and fault reporting
 - Payment options (cash / contactless)
 - Commercial model and costs to the host

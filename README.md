@@ -16,7 +16,9 @@ v1 (the cinematic brochure, with an enquiry form) is a separate repo: `pashovt/a
 - **Traditional layout**, modelled on the client's reference
   (exactvending.co.uk/free-business-vending-machines): top bar, header, dark banner, then light
   sections with photos, bullet lists and a Q&A. Navy and gold are kept from the business card.
-- **Logo:** the AC mark, redrawn from the client's business card photo. **Name:** AC-Action (never
+- **Logo:** the exact AC mark, cropped and background-removed from the client's business card photo
+  (`public/media/logo-mark.webp`), used for the header, footer and contact-panel wordmark and for
+  the favicon. **Name:** AC-Action (never
   "Ac Action" or "AC-Action Show").
 - **Photos:** generic stock images for now (credits below). They include real vending machine
   photos in "Machines we install" and an office break area with a machine in "About". There are no
@@ -68,8 +70,9 @@ npm run preview   # serve dist/
   empty, the page shows "to be confirmed" rather than a dead link. When a phone number is set it
   also appears in the header.
 - **Colours and type:** `src/styles/tokens.css`. **Layout:** `src/styles/sections.css`.
-- **Logo:** `src/components/Logo.jsx`. This is a redrawn AC mark; replace it with the client's
-  master logo file when it is supplied.
+- **Logo:** `src/components/Logo.jsx` renders `public/media/logo-mark.webp`, the exact mark cropped
+  from the client's business card photo. `public/favicon.svg` embeds the same mark on a navy tile.
+  Replace both with the client's master logo file when it is supplied.
 - **Hero vend animation:** `src/hooks/useVendIntro.js`. Which items are vended is set in
   `hero.vend` in `site.js`.
 
@@ -81,7 +84,7 @@ Before enabling it, cover it in the privacy policy and add cookie consent.
 ## Launch checklist
 
 - [x] Phone, email, company number and registered office confirmed and added (2026-10-21)
-- [ ] Logo master file (current mark is redrawn from the business card photo; swap in when supplied)
+- [ ] Logo master file (current mark is an exact crop from the business card photo, not a redraw; swap in when supplied)
 - [ ] Privacy policy, linked via `contact.privacyPolicyUrl`
 - [ ] Real photos of AC-Action machines and sites
 - [ ] Point `ac-action.com` at this deployment, then remove `noindex` from `index.html` and the
@@ -105,6 +108,6 @@ The warehouse, call-centre and office-sector images are AI-generated B2B visuali
 | `public/media/machine-combo.webp` | [Combination vending machine](https://unsplash.com/photos/grey-vending-machine-r74II0tE7tc) | Stéphan Valentin |
 | `public/media/machine-drinks.webp` | [Drinks vending machine](https://unsplash.com/photos/vending-machine-with-assorted-beverage-drinks-qh8jrjbYQbo) | Maximilian Bungart |
 
-Product models and the favicon are original SVG. The logo mark is redrawn from the client's own
-business card.
+Product models are original SVG. The logo mark and the favicon use the exact AC mark cropped from
+the client's own business card photo, with its navy background removed.
 Font: Montserrat (SIL Open Font License) via Fontsource.
