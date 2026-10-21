@@ -1,7 +1,7 @@
 import { machines, photos } from '../content/site.js';
 import PanelHead from './PanelHead.jsx';
 
-/** A few machine types AC Action installs (stock photos). */
+/** A few machine types AC-Action installs (stock photos). */
 export default function Machines() {
   return (
     <section id={machines.id} className="section machines theme-light" aria-labelledby="machines-title">

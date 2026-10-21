@@ -279,11 +279,12 @@ main:focus {
 }
 
 .logo__name {
-  font-size: 1.125rem;
+  font-size: clamp(0.8125rem, 0.65rem + 0.4vw, 1.0625rem);
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--cream);
+  white-space: nowrap;
 }
 
 .logo__desc {

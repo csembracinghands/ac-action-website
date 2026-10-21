@@ -130,6 +130,22 @@
   text-decoration: none;
 }
 
+.mobile-menu__phone {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 56px;
+  margin-bottom: 1.25rem;
+  color: var(--gold-400);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobile-menu__phone .icon {
+  width: 1.2rem;
+}
+
 @media (max-width: 959.98px) {
   .site-nav,
   .site-header__cta {
@@ -166,73 +182,6 @@
 
 .coverage__more {
   font-size: var(--fs-small);
-}
-
-.coverage__map {
-  justify-self: center;
-  width: min(100%, 420px);
-}
-
-.coverage__map figcaption {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--fg-muted);
-}
-
-.map-place circle {
-  fill: var(--cream);
-}
-
-.map-place--centre circle {
-  fill: var(--gold-400);
-}
-
-.map-pulse {
-  fill: none !important;
-  stroke: var(--gold-400);
-  stroke-width: 1.5;
-  transform-origin: center;
-  transform-box: fill-box;
-  animation: pulse 2.4s ease-out infinite;
-}
-
-@keyframes pulse {
-  from {
-    opacity: 0.9;
-    transform: scale(0.6);
-  }
-  to {
-    opacity: 0;
-    transform: scale(2.4);
-  }
-}
-
-.map-label {
-  fill: rgb(243 241 237 / 0.85);
-  font-size: 10px;
-  font-weight: 500;
-  font-family: var(--font-sans);
-}
-
-.map-place--centre .map-label {
-  fill: var(--gold-400);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.map-label--ring {
-  fill: var(--gold-400);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-}
-
-@media (min-width: 1024px) {
-  .coverage {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-    align-items: center;
-  }
 }
 
 /* FAQ accordion */
@@ -326,110 +275,8 @@
 }
 
 
-/* Postcode checker */
-
-.checker {
-  display: grid;
-  gap: 0.75rem;
-  margin-top: 1rem;
-  padding: 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: rgb(10 20 28 / 0.6);
-}
-
-.checker__heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0;
-  color: var(--cream);
-}
-
-.checker__intro {
-  font-size: var(--fs-small);
-}
-
-.checker__form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.checker__input {
-  flex: 1 1 12rem;
-  min-height: 50px;
-  padding: 0.7rem 1rem;
-  border: 1px solid rgb(213 181 122 / 0.45);
-  border-radius: var(--radius);
-  background: var(--navy-950);
-  color: var(--cream);
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.checker__input::placeholder {
-  color: rgb(184 190 199 / 0.7);
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.checker__input:focus-visible {
-  outline: none;
-  border-color: var(--gold-400);
-  box-shadow: 0 0 0 3px rgb(199 165 105 / 0.35);
-}
-
-.checker__form .btn[disabled] {
-  opacity: 0.7;
-  cursor: progress;
-}
-
-.checker__error {
-  color: var(--error);
-  font-size: var(--fs-small);
-  font-weight: 600;
-}
-
-.checker__outcome {
-  display: grid;
-  gap: 0.85rem;
-  justify-items: start;
-  padding: 1rem 1.1rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  animation: outcome-in 360ms var(--ease-out) both;
-}
-
-.checker__outcome--in {
-  background: linear-gradient(135deg, rgb(199 165 105 / 0.22), rgb(199 165 105 / 0.08));
-  border: 1px solid var(--gold-500);
-  color: var(--gold-300);
-}
-
-.checker__outcome--out {
-  background: rgb(243 241 237 / 0.06);
-  border: 1px solid var(--line);
-  color: var(--cream);
-}
-
-@keyframes outcome-in {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.checker__privacy {
-  font-size: 0.75rem;
-  color: var(--fg-muted);
-}/* ==========================================================================
-   AC Action v2 — static, traditional business layout (navy + gold on light)
+/* ==========================================================================
+   AC-Action v2 — static, traditional business layout (navy + gold on light)
    Modelled on the structure of the client's reference site: top bar, header,
    dark banner, then light content sections with photos and bullet lists.
    ========================================================================== */
@@ -466,6 +313,12 @@
 .site-header__phone .icon {
   width: 1.1rem;
   color: var(--gold-400);
+}
+
+@media (max-width: 959.98px) {
+  .site-header__phone {
+    display: none;
+  }
 }
 
 /* Icons */
@@ -979,24 +832,17 @@
 
 .coverage-v2__grid {
   display: grid;
-  gap: 3rem;
-  align-items: center;
 }
 
 .coverage-v2__text {
   display: grid;
   gap: 1.5rem;
+  justify-items: start;
+  max-width: 42rem;
 }
 
 .coverage-v2 .section-intro {
   color: var(--fg-muted);
-}
-
-@media (min-width: 1024px) {
-  .coverage-v2__grid {
-    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-    gap: 4.5rem;
-  }
 }
 
 /* ---------- FAQ ---------- */
@@ -1168,6 +1014,12 @@
   text-underline-offset: 0.2em;
 }
 
+.site-footer__company {
+  flex: 1 1 100%;
+  order: 1;
+  color: var(--fg-muted);
+}
+
 .site-footer__strap {
   color: var(--gold-400);
   letter-spacing: 0.2em;
@@ -1187,8 +1039,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .range-card__product,
-  .map-pulse {
+  .range-card__product {
     animation: none;
   }
 }

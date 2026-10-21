@@ -4,6 +4,7 @@ import Stripes from './Stripes.jsx';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const { address } = contact;
   return (
     <footer className="site-footer">
       <Stripes corner="tr" className="site-footer__stripes" />
@@ -27,6 +28,9 @@ export default function Footer() {
         <div className="site-footer__meta">
           <p>
             © {year} {brand.legalName}. All rights reserved.
+          </p>
+          <p className="site-footer__company">
+            Company no. {contact.companyNumber} · {contact.registration} · Registered office: {address.line1}, {address.line2}, {address.country}, {address.postcode}
           </p>
           {contact.privacyPolicyUrl ? (
             <p>

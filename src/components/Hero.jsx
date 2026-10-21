@@ -7,7 +7,7 @@ import Stripes from './Stripes.jsx';
 import Icon from './Icon.jsx';
 
 /**
- * Cover: navy banner with the AC Action machine. On load (once, ~3s) three
+ * Cover: navy banner with the AC-Action machine. On load (once, ~3s) three
  * keypad presses each vend an item that pops out of the delivery bin and lands
  * beside the machine. Without motion/JS the items simply sit there already.
  */

@@ -1,7 +1,7 @@
 import { useId } from 'react';
 
 /**
- * AC Action vending machine, drawn as an inline SVG (navy cabinet, gold trim,
+ * AC-Action vending machine, drawn as an inline SVG (navy cabinet, gold trim,
  * AC monogram). Inline so the hero sequence can "press" keypad buttons
  * (data-key="0..11") and drop items from the delivery bin (data-bin).
  * Illustrative only — replace with photography of the real machine later.
@@ -30,7 +30,7 @@ export default function MachineSvg({ className = '', variant = 'combo', title })
 
   return (
     <svg className={`machine ${className}`} viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" aria-labelledby={id('t')}>
-      <title id={id('t')}>{title || 'An AC Action vending machine stocked with drinks, crisps and chocolate'}</title>
+      <title id={id('t')}>{title || 'An AC-Action vending machine stocked with drinks, crisps and chocolate'}</title>
       <defs>
         <linearGradient id={id('body')} x1="0" x2="1">
           <stop offset="0" stopColor="#070d14" />
@@ -115,7 +115,7 @@ export default function MachineSvg({ className = '', variant = 'combo', title })
         <path d="M116 22 A34 34 0 1 0 116 58 L104 51 A20 20 0 1 1 104 29 Z" />
       </g>
       <text x="282" y="76" fill={`url(#${id('gold')})`} fontFamily="Montserrat Variable, Montserrat, sans-serif" fontWeight="700" fontSize="17" letterSpacing="3">
-        AC ACTION
+        AC-ACTION
       </text>
       <rect x="86" y="88" width="388" height="3" rx="1.5" fill={`url(#${id('gold')})`} opacity=".9" />
 

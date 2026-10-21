@@ -6,20 +6,20 @@
 > - layout modelled on Exact Vending
 > - motion limited to a one-off hero vend
 
-# AC Action — website design brief
+# AC-Action — website design brief
 
-Brochure-style website for AC Action Ltd, built with the Cinematic Website Toolset workflow
+Brochure-style website for AC-Action Ltd, built with the Cinematic Website Toolset workflow
 (`/Users/tes/Documents/Business/Website building toolset`). The client brief was a six-panel A5
 portrait leaflet; this site is that leaflet, made for the web.
 
 ## Client facts (source: brief + business card)
 
-- **Name:** **AC Action** (company: AC Action Ltd). The card template's "AC Action Show" is a
+- **Name:** **AC-Action** (company: AC-Action Ltd). The card template's "AC-Action Show" is a
   mistake. "Show" must never appear.
 - **Descriptor:** Vending Solutions · Snacks · Drinks · More.
 - **Offer:** crisps & snacks, chocolate & confectionery, bottled & canned drinks.
 - **Sites:** warehouses, call centres, high-rise buildings, office spaces. Ideal for workplaces with 50+ employees.
-- **Area:** businesses within ~15 miles of Nottingham.
+- **Area:** businesses in Nottingham and the surrounding area (no fixed radius is published).
 - **Lines:** "Bringing convenience to your building." · "Quality snacks and drinks, conveniently placed in your workplace."
 - **Audience:** business owners, facilities managers, building decision-makers.
 - **Goal:** introduce the business, show the workplace benefit, and drive enquiries with a clear CTA and contact details.
@@ -57,27 +57,32 @@ portrait leaflet; this site is that leaflet, made for the web.
   - Native scrolling, roughly 1.3 viewports.
   - Mobile, reduced-motion and no-JS visitors see the closed cover.
 - **Product models:** crisps, chocolate, cans and bottles as SVG. They float with scroll parallax and bob gently.
-- **Other motion:** a coverage-map pulse, and section reveals (opacity only, focus-safe).
+- **Other motion:** section reveals (opacity only, focus-safe). The service-area checker and
+  radius map were removed on the client's instruction (2026-10-21).
 
 ## Level 4 — Media
 
 - **Photography:** Unsplash Licence stand-ins (see README).
 - **Product art:** original SVG.
 - **Shot list for the client:**
-  1. AC Action machine(s) on site, eye level, in a well-lit staff area
+  1. AC-Action machine(s) on site, eye level, in a well-lit staff area
   2. Close-up of a stocked machine front (crisps, chocolate, drinks)
   3. Restocking or cleaning (hands only)
   4. One real client site per sector (warehouse, call centre, high-rise, office)
 
-## To confirm with the client
+## Confirmed by the client (2026-10-21)
 
-- Phone and email
-- Logo master file (the current SVG is redrawn from the card)
+- Phone: +44 7466 842330 · Email: acactionltd@gmail.com · Website: ac-action.com
+- Registered office: 82a James Carter Road, Mildenhall, United Kingdom, IP28 7DE
+- Company number 17480497, registered in England & Wales
+- No service-area checker or mile radius — coverage is described in words only
+
+## Still to confirm with the client
+
+- Logo master file (the current SVG is redrawn from the business card photo)
 - Service arrangements: installation, restocking frequency, maintenance and fault reporting
 - Payment options (cash / contactless)
 - Commercial model and costs to the host
-- Exact service area and any towns to list
-- Company registration details
+- Exact towns to list under "Service area"
 - Privacy policy
-- Form endpoint
 - Analytics consent

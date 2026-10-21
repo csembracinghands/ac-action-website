@@ -27,11 +27,15 @@ export default function ContactPanel() {
           {contact.email}
         </a>
       ) : (
-        <span className="tbc">Address to be confirmed</span>
+        <span className="tbc">Email to be confirmed</span>
       ),
     },
+    {
+      icon: 'globe',
+      label: 'Website',
+      value: contact.website ? <span>{contact.website}</span> : <span className="tbc">Website to be confirmed</span>,
+    },
     { icon: 'pin', label: 'Area we serve', value: <span>{contact.area}</span> },
-    { icon: 'building', label: 'Business', value: <span>{brand.legalName}</span> },
   ];
   return (
     <section id={contactSection.id} className="section contact-v2" aria-labelledby="contact-title">

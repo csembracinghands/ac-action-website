@@ -2,15 +2,15 @@ import { useId } from 'react';
 import { brand } from '../content/site.js';
 
 /**
- * AC monogram + wordmark, redrawn as SVG from the business card for the
- * website. Replace with the client's master logo file when supplied
- * (keep the gold gradient and "AC ACTION" — never "AC Action Show").
+ * AC monogram + wordmark, redrawn as SVG from the client's business card
+ * (solid wedge "A" with a small base notch, overlapped by an open "C" ring).
+ * Replace with the client's master logo file when supplied.
  */
 export function Monogram({ className = '' }) {
   const uid = useId().replace(/:/g, '');
   const g = `gold-${uid}`;
   return (
-    <svg className={`monogram ${className}`} viewBox="0 0 120 80" aria-hidden="true" focusable="false">
+    <svg className={`monogram ${className}`} viewBox="0 0 150 100" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id={g} x1="0" x2="1" y1="0" y2="1">
           <stop offset="0" stopColor="#aa8548" />
@@ -19,14 +19,10 @@ export function Monogram({ className = '' }) {
           <stop offset="1" stopColor="#a78856" />
         </linearGradient>
       </defs>
-      {/* A: a tall peak with an angled inner cut */}
-      <path d="M4 76 L38 4 H50 L84 76 H68 L44 24 L20 76 Z" fill={`url(#${g})`} />
-      <path d="M30 76 L44 46 L58 76 Z" fill={`url(#${g})`} opacity=".75" />
-      {/* C: open ring overlapping the A */}
-      <path
-        d="M116 22 A34 34 0 1 0 116 58 L104 51 A20 20 0 1 1 104 29 Z"
-        fill={`url(#${g})`}
-      />
+      {/* A: solid wedge with a small notch cut from the base */}
+      <path d="M56 4 L100 94 L66 94 L56 76 L46 94 L12 94 Z" fill={`url(#${g})`} />
+      {/* C: open ring, overlapping the A's upper-right leg */}
+      <path d="M133.61 49.57 A40 40 0 1 0 115.2 77.92 L107.78 66.05 A26 26 0 1 1 119.75 47.62 Z" fill={`url(#${g})`} />
     </svg>
   );
 }

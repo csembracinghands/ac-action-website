@@ -53,7 +53,7 @@ export function useVendIntro(rootRef) {
         });
       });
     } catch (err) {
-      console.warn('[AC Action] Vend intro disabled:', err);
+      console.warn('[AC-Action] Vend intro disabled:', err);
     }
     return () => mm && mm.revert();
   }, [rootRef]);

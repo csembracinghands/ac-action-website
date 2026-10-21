@@ -45,7 +45,7 @@ export default function Header() {
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`}>
       <div className="site-header__inner container">
-        <a className="site-header__brand" href="#top" aria-label="AC Action, back to top" onClick={close}>
+        <a className="site-header__brand" href="#top" aria-label="AC-Action, back to top" onClick={close}>
           <Logo />
         </a>
         <nav className="site-nav" aria-label="Primary">
@@ -89,6 +89,19 @@ export default function Header() {
               </li>
             ))}
           </ul>
+          {contact.phone ? (
+            <a
+              className="mobile-menu__phone"
+              href={`tel:${contact.phone.replace(/\s+/g, '')}`}
+              onClick={() => {
+                trackEvent('contact_phone_click', { location: 'mobile-menu' });
+                close();
+              }}
+            >
+              <Icon name="phone" />
+              {contact.phone}
+            </a>
+          ) : null}
           <a className="btn btn--gold btn--block" href={nav.cta.href} onClick={ctaClick}>
             {nav.cta.label}
           </a>

@@ -9,6 +9,7 @@ const PATHS = {
   mail: 'M4 6h16v12H4zM4 7l8 6 8-6',
   pin: 'M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z',
   building: 'M5 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16M15 9h3a1 1 0 0 1 1 1v11M3 21h18M8 8h3M8 12h3M8 16h3',
+  globe: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM3 12h18M12 3c2.3 2.3 3.5 5.3 3.5 9s-1.2 6.7-3.5 9c-2.3-2.3-3.5-5.3-3.5-9S9.7 5.3 12 3Z',
 };
 
 export default function Icon({ name, className = '' }) {
