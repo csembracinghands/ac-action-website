@@ -90,7 +90,13 @@ Before enabling it, cover it in the privacy policy and add cookie consent.
 
 ## Image credits (Unsplash Licence: free to use, no attribution required)
 
-Generic stock photos, used until AC-Action has its own. They are not AC-Action machines, sites or clients.
+The warehouse, call-centre and office-sector images are AI-generated B2B visualisations used until AC-Action has its own site photography. They are illustrative, not AC-Action machines, sites or clients. The remaining photos are generic Unsplash stock images, also used as placeholders.
+
+| File | Source |
+|---|---|
+| `public/media/warehouse-b2b.png` | AI-generated warehouse vending visualisation |
+| `public/media/callcentre-b2b.png` | AI-generated call-centre vending visualisation |
+| `public/media/office-b2b.png` | AI-generated office vending visualisation |
 
 | File | Photo | Photographer |
 |---|---|---|

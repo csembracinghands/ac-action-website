@@ -57,15 +57,15 @@ export const nav = {
   cta: { label: 'Get in touch', href: '#contact' },
 };
 
-/** Generic stock photography (Unsplash Licence) — see README for credits. */
+/** Generated sector photography and generic stock photography — see README for credits. */
 export const photos = {
-  warehouse: { src: media('warehouse.webp'), width: 1800, height: 1200, alt: 'A large, brightly lit warehouse floor with a polished concrete finish.' },
-  callcentre: { src: media('callcentre.webp'), width: 1600, height: 1067, alt: 'An open-plan office with rows of desks, screens and desk phones.' },
+  warehouse: { src: media('warehouse-b2b.png'), width: 1536, height: 1024, alt: 'Warehouse colleagues taking a break beside a stocked vending machine in an active distribution centre.' },
+  callcentre: { src: media('callcentre-b2b.png'), width: 1536, height: 1024, alt: 'Call-centre colleagues taking a short break beside a stocked vending machine.' },
   officeVending: { src: media('office-vending.webp'), width: 1600, height: 1067, alt: 'A bright office break area with a glass-fronted vending machine beside recycling bins.' },
   machineSnack: { src: media('machine-snack.webp'), width: 900, height: 1350, alt: 'A glass-fronted snack vending machine stocked with crisps and chocolate bars.' },
   machineCombo: { src: media('machine-combo.webp'), width: 1000, height: 1000, alt: 'A combination vending machine with snacks on the upper shelves and bottled water and cans below.' },
   machineDrinks: { src: media('machine-drinks.webp'), width: 900, height: 1357, alt: 'A glass-fronted drinks vending machine stocked with bottles and cans.' },
-  office: { src: media('workplace.webp'), width: 1800, height: 1200, alt: 'A modern office kitchen with dark cabinets, a white worktop and a coffee machine.' },
+  office: { src: media('office-b2b.png'), width: 1536, height: 1024, alt: 'Office colleagues using a stocked vending machine in a workplace break area.' },
 };
 
 /** Cover. The machine plays a short vend animation once on load. */
