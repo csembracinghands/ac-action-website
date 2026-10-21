@@ -164,26 +164,6 @@
 }
 
 
-/* Coverage list + map */
-
-.coverage__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.coverage__list li {
-  padding: 0.3rem 0.75rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  color: var(--cream);
-}
-
-.coverage__more {
-  font-size: var(--fs-small);
-}
-
 /* FAQ accordion */
 
 .accordion {

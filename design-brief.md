@@ -83,6 +83,5 @@ portrait leaflet; this site is that leaflet, made for the web.
 - Service arrangements: installation, restocking frequency, maintenance and fault reporting
 - Payment options (cash / contactless)
 - Commercial model and costs to the host
-- Exact towns to list under "Service area"
 - Privacy policy
 - Analytics consent

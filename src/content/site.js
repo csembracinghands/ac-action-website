@@ -44,7 +44,7 @@ export const contact = {
   privacyPolicyUrl: '', // client is drawing up the privacy policy
 };
 
-export const topBar = 'Workplace vending machines — installed, maintained and restocked around Nottingham';
+export const topBar = 'Workplace vending machines — installed, maintained and restocked around Nottingham and the surrounding area';
 
 export const nav = {
   links: [
@@ -179,7 +179,6 @@ export const coverage = {
   eyebrow: 'Service area',
   heading: 'Nottingham and the surrounding area.',
   body: 'We look after workplaces across Nottingham and the surrounding area. Get in touch and we’ll confirm whether we can cover your site.',
-  places: ['Nottingham', 'West Bridgford', 'Beeston', 'Arnold', 'Carlton', 'Hucknall', 'Ilkeston', 'Long Eaton', 'Eastwood', 'Ruddington', 'Clifton', 'Bingham'],
   cta: { label: 'Get in touch', href: '#contact' },
 };
 

@@ -42,7 +42,7 @@ v1 (the cinematic brochure, with an enquiry form) is a separate repo: `pashovt/a
    combination and drinks; stock photos)
 4. **Why AC-Action** (benefits checklist, plus photos of three sectors: warehouses, call centres and offices)
 5. **Our service** (installation, restocking, maintenance and servicing, one local contact) and
-   **Service area** (places, in words, with a "Get in touch" button)
+   **Service area** (Nottingham and the surrounding area, with a "Get in touch" button)
 6. **Questions and answers**, then **Contact** (details only), then the footer
 
 ## Run locally
