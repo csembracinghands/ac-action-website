@@ -94,19 +94,16 @@ The warehouse, call-centre and office-sector images are AI-generated B2B visuali
 
 | File | Source |
 |---|---|
-| `public/media/warehouse-b2b.png` | AI-generated warehouse vending visualisation |
-| `public/media/callcentre-b2b.png` | AI-generated call-centre vending visualisation |
-| `public/media/office-b2b.png` | AI-generated office vending visualisation |
+| `public/media/warehouse-b2b.webp` | AI-generated warehouse vending visualisation |
+| `public/media/callcentre-b2b.webp` | AI-generated call-centre vending visualisation |
+| `public/media/office-b2b.webp` | AI-generated office vending visualisation |
 
 | File | Photo | Photographer |
 |---|---|---|
-| `public/media/warehouse.webp` | [Empty modern warehouse](https://unsplash.com/photos/empty-modern-warehouse-interior-with-polished-concrete-floor-3lkaszxWfGc) | Craftsman Concrete Floors |
-| `public/media/callcentre.webp` | [Open-plan office](https://unsplash.com/photos/people-working-at-desks-in-open-office-kN_kViDchA0) | Arlington Research |
 | `public/media/office-vending.webp` | [Office break area with vending machine](https://unsplash.com/photos/black-and-blue-vending-machine-beside-brown-wooden-cabinet-2hELuLQcEWU) | Petr (@mpetrucho) |
 | `public/media/machine-snack.webp` | [Snack vending machine](https://unsplash.com/photos/red-and-black-vending-machine-In51lypcCDA) | Denny Müller |
 | `public/media/machine-combo.webp` | [Combination vending machine](https://unsplash.com/photos/grey-vending-machine-r74II0tE7tc) | Stéphan Valentin |
 | `public/media/machine-drinks.webp` | [Drinks vending machine](https://unsplash.com/photos/vending-machine-with-assorted-beverage-drinks-qh8jrjbYQbo) | Maximilian Bungart |
-| `public/media/workplace.webp` | [Office kitchen](https://unsplash.com/photos/a-kitchen-with-black-cabinets-and-a-white-counter-top-OI6D_VKxSMw) | Craig Lovelidge |
 
 Product models and the favicon are original SVG. The logo mark is redrawn from the client's own
 business card.
