@@ -208,4 +208,9 @@ export const footer = {
     { label: 'Questions', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ],
+  legalLinks: [
+    { label: 'Terms & Conditions', href: '/terms' },
+    { label: 'Privacy Notice', href: '/privacy' },
+    { label: 'Refunds & Product Faults', href: '/refunds' },
+  ],
 };

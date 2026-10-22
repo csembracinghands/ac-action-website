@@ -1001,6 +1001,30 @@
   color: var(--fg-muted);
 }
 
+.site-footer__legal {
+  flex: 1 1 100%;
+  order: 1;
+}
+
+.site-footer__legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.site-footer__legal a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--fg-muted);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer__legal a:hover {
+  color: var(--gold-400);
+}
+
 .site-footer__strap {
   color: var(--gold-400);
   letter-spacing: 0.2em;
@@ -1023,4 +1047,104 @@
   .range-card__product {
     animation: none;
   }
+}
+
+/* Legal pages (Terms, Privacy, Refunds) */
+.legal-page__container {
+  max-width: 48rem;
+}
+
+.legal-page__back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+  text-decoration: none;
+}
+
+.legal-page__back:hover {
+  color: var(--gold-400);
+}
+
+.legal-page__title {
+  margin-top: 1.5rem;
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.legal-page__updated {
+  margin-top: 0.5rem;
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+}
+
+.legal-page__section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.legal-page__section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.legal-page__section p,
+.legal-page__section li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+}
+
+.legal-page__section p + p,
+.legal-page__section ul {
+  margin-top: 0.85rem;
+}
+
+.legal-page__section ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-page__note {
+  font-style: italic;
+}
+
+.legal-page__facts {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.legal-page__facts div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.legal-page__facts dt {
+  color: var(--fg-muted);
+}
+
+.legal-page__facts dd {
+  font-weight: 600;
+}
+
+.legal-page__links {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-page__links a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }

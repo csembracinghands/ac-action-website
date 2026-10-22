@@ -32,11 +32,15 @@ export default function Footer() {
           <p className="site-footer__company">
             Company no. {contact.companyNumber} · {contact.registration} · Registered office: {address.line1}, {address.line2}, {address.country}, {address.postcode}
           </p>
-          {contact.privacyPolicyUrl ? (
-            <p>
-              <a href={contact.privacyPolicyUrl}>Privacy policy</a>
-            </p>
-          ) : null}
+          <nav aria-label="Legal" className="site-footer__legal">
+            <ul>
+              {footer.legalLinks.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href}>{l.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
           <p className="site-footer__strap">{brand.strapline.join(' · ')}</p>
         </div>
       </div>

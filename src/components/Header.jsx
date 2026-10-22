@@ -45,7 +45,12 @@ export default function Header() {
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}${open ? ' is-open' : ''}`}>
       <div className="site-header__inner container">
-        <a className="site-header__brand" href="#top" aria-label="AC-Action, back to top" onClick={close}>
+        <a
+          className="site-header__brand"
+          href={(window.location.pathname.replace(/\/+$/, '') || '/') === '/' ? '#top' : '/'}
+          aria-label="AC-Action, back to top"
+          onClick={close}
+        >
           <Logo />
         </a>
         <nav className="site-nav" aria-label="Primary">
